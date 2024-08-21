@@ -1,5 +1,8 @@
 # Ex.No:1a  			Study of Socket Programming
 
+## Name: HARIPRASHAAD RA 
+## Reg no: 212223040060
+
 ## Aim: 
 To perform a study on Socket Programming
 ## Introduction:
@@ -54,10 +57,9 @@ Socket programming finds applications in various domains, including web developm
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
 
 ## PROGRAM
-Developed BY : THARUN SRIDHAR 
-Reg NO : 212223230230
 
 ## CLIENT 
+'''
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -73,14 +75,17 @@ continue
 else:
 c.close()
 break
+'''
 
 ## SERVER
+'''
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
  print(s.recv(1024).decode())
  s.send("Acknowledgement Recived".encode())
+ '''
 
 ## OUTPUT :
 ## CLIENT :
